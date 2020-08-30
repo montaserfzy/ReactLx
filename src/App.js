@@ -1,26 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Routers from './routes';
+import {Provider} from 'react-redux';
+import {applyMiddleware, compose, createStore} from 'redux';
+import thunk from 'redux-thunk';
+import Reducer from './reducers';
+import './styles/mobile.scss';
+import './styles/styles.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { library }  from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+
+library.add(fas);
+
+let composeEnhancers = compose;
+
+if(process.env.NODE_ENV === 'development' ){
+    composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 }
+
+const store = createStore(Reducer, composeEnhancers(applyMiddleware(thunk)));
+
+const App = () => {
+    return (
+        <Provider store={store}>
+            <Routers/>
+        </Provider>
+    );
+};
 
 export default App;

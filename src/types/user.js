@@ -1,0 +1,3 @@
+export const SET_USER_INFO = 'SET_USER_INFO';
+export const SET_SUCCESS = 'SET_SUCCESS';
+export const SET_RESPONSE_ERRORS = 'SET_RESPONSE_ERRORS';

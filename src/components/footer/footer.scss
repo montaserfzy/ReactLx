@@ -1,0 +1,21 @@
+.page-footer{
+  background-color: #01384b;
+  //color: #8a92a3;
+  color: #686f7a;
+  font-size: 13px;
+  line-height: 18px;
+  width: 100%;
+  border-top: 2px solid #fd9f0c;
+  border-bottom: 6px solid #ff7e1b;
+  margin-top: 3rem;
+  align-self: flex-end;
+  a{
+    color: #fff;
+    background-color: #0000;
+    font-weight: 400;
+    text-decoration: none;
+  }
+  .footer-copyright{
+    color: #ff7e1b;
+  }
+}

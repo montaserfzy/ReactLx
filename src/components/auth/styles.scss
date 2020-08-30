@@ -1,0 +1,58 @@
+
+.Login {
+  width: 350px;
+  margin: 0px auto 100px;
+  min-height: 100%;
+  max-width:90%
+}
+
+.form-group {
+  text-align: start;
+}
+
+.SignUp {
+  width: 350px;
+  margin: 0px auto 100px;
+  min-height: 100%;
+  max-width:90%
+}
+
+.form-group {
+  text-align: start;
+}
+
+.auth-modal-link {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px 5px;
+  .auth-link {
+    padding: 0px 20px;
+    background: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-decoration: none !important;
+    color: #000;
+    touch-action: manipulation;
+    opacity: 0.85;
+    height: 40px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    &:hover{
+      opacity: 1;
+    }
+  }
+  .signup-button{
+    background: #ff771f;
+    border-color: #ff771f;
+    color: #fff;
+  }
+
+}
+.react-tel-input{
+  .form-control{
+    width:100% !important;
+  }
+}
