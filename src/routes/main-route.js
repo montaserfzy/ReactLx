@@ -11,7 +11,7 @@ const MainRoute = ({location}) => {
     const isUserAuth = isUserLoggedIn();
     return (
         <div className="app-content"
-             dir={window._tobe_dir}>
+             dir={window._site_dir}>
             <Nav isAdminRoute={isAdminRoute}/>
             <Suspense fallback={<Loader/>}>
                 <main>

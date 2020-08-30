@@ -30,7 +30,7 @@ export const saveUserSession = async session => {
         expires: new Date(new Date().setFullYear('2030')),
         // maxAge: 1000
     });
-    window._tobe_dir = session.lang === 'en' ? 'ltr' : 'rtl';
+    window._site_dir = session.lang === 'en' ? 'ltr' : 'rtl';
     return await getUserSession();
 };
 
